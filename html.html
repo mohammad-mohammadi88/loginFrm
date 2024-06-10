@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .container{
+            background-color: #009f68;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 1px #747474;
+            max-width: 600px;
+            margin: auto;
+            min-height: 300px;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        .container form{
+            display: flex;
+            flex-direction: column;
+        }
+        .container form label{
+            color: #fff;
+            font-size: 18px;
+        }
+        .container form input:not(:last-child){
+            width: 100%;
+            height:40px;
+            border: none;
+            /* outline: none; */
+            margin: 6px 0 18px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .container form input:not(:last-child):focus{
+            outline: 2px solid rgb(245, 100, 255);
+            transition: 0.1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="dialog">
+            <label for="first-name">first name</label>
+            <input type="text" name="" id="first-name">
+            <label for="last-name">last name</label>
+            <input type="text" name="" id="last-name">
+            <label for="password">password</label>
+            <input type="password" name="" id="password">
+            <label for="email">email <small>(optional)</small></label>
+            <input type="email" name="" id="email">
+            <input type="submit" name="" id="submit-button">
+        </form>
+    </div>
+</body>
+</html>
